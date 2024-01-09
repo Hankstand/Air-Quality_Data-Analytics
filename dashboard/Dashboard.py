@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-air_quality_data = pd.read_csv('merge_data.csv')
+air_quality_data = pd.read_csv('dashboard/merge_data.csv')
 air_quality_data['datetime'] = pd.to_datetime(air_quality_data['datetime'])
 
 pollutant_metrics = list(air_quality_data.columns[:6])
@@ -26,7 +26,7 @@ with st.sidebar:
     with col1:
         st.write(' ')
     with col2:
-        st.image("Logo.png", width=100)
+        st.image("dashboard/Logo.png", width=100)
     with col3:
         st.write(' ')
     st.header('Filters')
