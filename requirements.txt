@@ -1,4 +1,7 @@
-Python
-Pandas
-Streamlit
-Plotly
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+streamlit
+plotly
